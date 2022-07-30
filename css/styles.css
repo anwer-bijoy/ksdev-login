@@ -62,6 +62,10 @@ section nav a {
 }
 
 /* Main Section CSS */
+section#main .sign-in {
+  z-index: 99;
+  background: #fff;
+}
 section#main .navClose {
   display: none;
 }
@@ -83,8 +87,8 @@ section nav h1 {
   text-align: center;
   height: 800px;
   padding: 75px;
-  background-color: #358fef;
   width: 60%;
+  background: linear-gradient(-45deg, #4481eb, #04befe);
   border-bottom-right-radius: 700px;
 }
 .sign-in-left img {
