@@ -1,0 +1,197 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* Common CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+/* Collapse MEnu */
+.collapse .collapseMenu {
+  box-sizing: border-box;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  padding-top: 100px;
+  top: 0;
+  left: 0px;
+  background-color: #282828;
+  display: flex;
+  flex-direction: column;
+  transition: all linear 0.5s;
+}
+.collapse .collapseMenu a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  padding-left: 30px;
+  padding-top: 25px;
+}
+.collapse .collapseMenu a:hover {
+  text-decoration: underline;
+}
+
+section#main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  transition: all linear 1s;
+  -webkit-transition: all linear 0.5s;
+}
+section nav {
+  background-color: #fff;
+  padding: 25px;
+  position: relative;
+  border-top-left-radius: 35px;
+}
+section nav a {
+  color: #525f7f;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/* Main Section CSS */
+section#main .navClose {
+  display: none;
+}
+section nav h1 {
+  position: absolute;
+  text-decoration: underline;
+  text-decoration-color: black;
+  color: #525f7f;
+  font-size: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -moz-text-decoration-color: black;
+}
+#sign-in {
+  display: flex;
+}
+.sign-in-left {
+  text-align: center;
+  height: 800px;
+  padding: 75px;
+  background-color: #358fef;
+  width: 60%;
+  border-bottom-right-radius: 700px;
+}
+.sign-in-left img {
+  width: 85%;
+}
+.sign-in-left h3 {
+  color: #32325d;
+  font-weight: 400;
+  font-size: 30px;
+}
+.sign-in-left p {
+  color: #fff;
+  font-size: 18px;
+  margin: 15px;
+}
+.sign-in-left a {
+  margin-bottom: 50px;
+  display: inline-block;
+  color: #fff;
+  font-weight: 600;
+  background-color: transparent;
+  text-decoration: none;
+  padding: 9px 35px;
+  border: 2px solid #fff;
+  border-radius: 20px;
+}
+.sign-in-left a:hover {
+  color: #282828;
+  background-color: rgb(77, 132, 226);
+  box-shadow: 0 5px 15px rgba(77, 132, 226, 0.5);
+}
+.sign-in-right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sign-in-right h1 {
+  font-size: 40px;
+  color: #282828;
+}
+.sign-in-right form {
+  display: flex;
+  flex-direction: column;
+}
+.sign-in-right form div {
+  width: 350px;
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  height: 70px;
+  border-radius: 60px;
+  padding-left: 30px;
+  margin-top: 15px;
+}
+.sign-in-right form div #email,
+.sign-in-right form div #password {
+  outline: none;
+  font-size: 18px;
+  margin-left: 15px;
+  display: inline-block;
+  border: none;
+  background-color: #f0f0f0;
+}
+.sign-in-right form div .fa {
+  color: #ddd;
+  font-size: 26px;
+}
+.log-in-btn {
+  width: 150px;
+  display: inline-block;
+  background-color: #358fef;
+  color: #fff;
+  margin: 0 auto;
+  font-size: 16px;
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 35px;
+  border: none;
+  outline: none;
+  transition: all linear 0.2s;
+}
+.log-in-btn:hover {
+  background-color: rgb(77, 132, 226);
+  box-shadow: 0 5px 8px rgba(77, 132, 226, 0.5);
+}
+.bubbles {
+  position: relative;
+  display: flex;
+}
+.bubbles span {
+  position: relative;
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  margin: 0 4px;
+  border-radius: 5px;
+  animation: animate 15s linear infinite;
+  animation-duration: calc(125s / var(--i));
+}
+@keyframes animate {
+  0% {
+    transform: translateY(30px) scale(0.25);
+  }
+  25% {
+    transform: translateY(25vh) scale(0.5);
+  }
+  50% {
+    transform: translateY(50vh) scale(1);
+  }
+  75% {
+    transform: translateY(75vh) scale(0.5);
+  }
+  100% {
+    transform: translateY(90vh) scale(0.5);
+  }
+}
