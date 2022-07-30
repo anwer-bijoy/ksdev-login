@@ -62,7 +62,7 @@ section nav a {
 }
 
 /* Main Section CSS */
-section#main .sign-in {
+#main #sign-in {
   z-index: 99;
   background: #fff;
 }
